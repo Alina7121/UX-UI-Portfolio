@@ -7,7 +7,7 @@
   }
    
    body{
-    background-color: rgb(19, 18, 18); 
+    background-color: rgb(13, 14, 13); 
    }
   .header{
     position:fixed;
@@ -107,7 +107,7 @@
      padding: 10px 25px;
     }
      nav ul li a{
-      color: white;
+      color: rgb(247, 244, 244);
       text-decoration: none;
       font-weight: bold;
      }
@@ -126,7 +126,7 @@
       background-image: linear-gradient(120deg, #0a4625 0%, #f986d6 100%);
       border-radius: 40px;
       box-shadow: 0 0 10px #02FEE4;
-      font-size: 16px;
+      font-size:1.2em;
       color: #eaefde;
       letter-spacing: 1px;
       text-decoration: none;
@@ -197,29 +197,29 @@
       }
     }
     
-    /*------------------------------------------------------Content------------------------------------------------------------*/
+    /*Content--------------------------------------------------------------------------------------------------------------------------------------*/
     .left{
       position: absolute;
-      top: 50%;
+      top: 70%;
       left: 8%;
-     /* transform: translateY(-50%);*/
+     transform: translateY(-50%);
     }
     h1 {
-      background: -webkit-linear-gradient(120deg, #eaf1cd 0%, #96e6a1 100%);
+      background: -webkit-linear-gradient(120deg, #f7f2f2 0%, #96e6a1 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 65px;
+      font-size: 55px;
       margin-bottom: 40px;/*was 75 and 50*/
     }
     h3{
-      font-size: 25px;
+      font-size: 20px;
       margin-bottom: 50px;
       color:#96e6a1;
       }
     
     h4 {
-      background: -webkit-linear-gradient(120deg, #f1f6e6 0%, #96e6a1 100%);
+      background: -webkit-linear-gradient(120deg, #f9f3f3 0%, #96e6a1 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -230,12 +230,12 @@
    .peony{
       width: 75%;
      /* max-width: 700px;*/
-      margin-top: -20px;
-      margin-left:42%;
+     opacity: 0.8;
+      margin-left:40%;
     }
   
-    Glowing-------------------------------------------------------
-     .glowing {
+    /*Glowing Particles----------------------------------------------------------------------------------------------------------------------------------------*/
+    /* .glowing {
        position: absolute;
        min-width: 150px;
        height: 750px;
@@ -243,7 +243,6 @@
        transform-origin: right ;
        animation:colorChange 10s linear infinite;
      }
-  
   .glowing {
     margin:0;
     padding: 0;
@@ -254,7 +253,6 @@
     transform-origin: right ;
     animation:colorChange 10s linear infinite;
   }
-  
   .glowing span{
     margin:0;
     padding: 0;
@@ -288,8 +286,6 @@
     0 0 0 8px rgba(134,255,0,.1);
   
    }
-  
-  
    .glowing span:nth-child(3n + 2):before{
     background: rgba(255,214,0,1);
     box-shadow: 0 0 20px rgba(134,255,0,1),
@@ -299,8 +295,6 @@
     0 0 80px rgba(255,214,0,1),
     0 0 0 8px rgba(255,214,0,.1);
    }
-   
-  
    .glowing span:nth-child(3n + 3):before{
     background: rgba(0,226,255,1);
     box-shadow: 0 0 20px rgba(0,226,255,1),
@@ -354,18 +348,15 @@
       border-radius: 50%;
       z-index: -1;
     
-     }
-     
-
-  
+     } 
   /*----------------------------------------- GLow Background Section-----------------------------------------------------*/
     .glow {
    position: relative;
       height: 100vh;
       width: auto;
-      background: linear-gradient(to left, transparent 50%, rgba(0, 255, 255, 0.1) 80%, transparent 100%);
+      background: linear-gradient(to left, transparent 20%, rgba(131, 233, 233, 0.158) 70%, transparent 100%);
       margin-right: 10px;
-      background-color: #0c0101;
+      background-color: rgb(7, 7, 7);
       border-radius: 5px;
       overflow: hidden;
       z-index: 1; 
@@ -381,7 +372,7 @@
       border-radius: 5px;
       pointer-events: none; 
       z-index: -1; 
-      animation: gradientAnimation 10s linear infinite; 
+      animation: gradientAnimation 30s linear infinite; 
     }
     @keyframes gradientAnimation {
       0% {
@@ -425,22 +416,23 @@
       justify-content: center;
     }
     .about-text h2{
-      color: white;
+      color: rgb(247, 244, 244);
      font-size: 2em;
       margin-bottom: 20px;
     }
     h5 {
-      color: white;
+      color:rgb(247, 244, 244);
       letter-spacing: 2px;
       font-size:1.75em;
       margin-bottom: 25px;
       text-transform: capitalize;
     }
     .about-text p{
-      color: white;
+      color: rgb(247, 244, 244);
       line-height: 25px;
       font-size: 1.2em;
       margin-bottom: 45px;
+      word-spacing: 2px;
     }
     /*Image------------------------------------------------------------------------------------------------------------------------------*/
     .about img {
@@ -453,6 +445,7 @@
       box-shadow: 0 0 10px #02FEE4;
       transition: background-color 0.3s, transform 0.3s;
       animation: glow 2s infinite alternate; 
+    
      
     }
     .about img:hover {
@@ -473,7 +466,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 50px;
-    padding-left: 15%;
+    padding-left: 10%;
    
   }
   
@@ -574,6 +567,7 @@
         border-radius: 10px;
         text-align: center;
         transition: 0.3s ease;
+        background-color: ;
       }
       .project-container:hover,
       .project-container:focus {
@@ -602,7 +596,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10px; 
+        padding: 20px; 
         text-align: center; 
       }       
       footer p:nth-child(1) {
@@ -618,6 +612,7 @@
       .contact-info {
         font-size: 2px;
         margin-top: auto;
+        margin-bottom: 20px;
       }
       .contact-info span {
         font-weight: bold;
@@ -817,6 +812,9 @@
       .about {
         text-align: center;
       }
+      .about img {
+        margin-right: 0;
+      }
       .main {
         flex-direction: column;
       }
@@ -826,12 +824,12 @@
       .project {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       }
-      .project-container {
+      /*.project-container {
         margin-bottom: 30px;
       }
       .project-image {
         width: 100%;
-      }
+      }*/
       .btn {
         margin-top: 10px;
       }
