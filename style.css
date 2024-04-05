@@ -234,15 +234,11 @@
       margin-left:40%;
     }
   /*----------------------------------------- GLow Background Section-----------------------------------------------------*/
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }  
+
   .glow {
    position: relative;
       height: 100vh;
-      width: auto;
+      width: 100%;
       background: linear-gradient(to left, transparent 20%, rgba(131, 233, 233, 0.158) 70%, transparent 100%);
       margin-right: 10px;
       background-color: rgb(7, 7, 7);
@@ -261,7 +257,7 @@
       border-radius: 5px;
       pointer-events: none; 
       z-index: -1; 
-      animation: gradientAnimation 30s linear infinite; 
+      animation: gradientAnimation 20s linear infinite; 
     }
     @keyframes gradientAnimation {
       0% {
