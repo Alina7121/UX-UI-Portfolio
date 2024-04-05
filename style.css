@@ -350,7 +350,12 @@
     
      } 
   /*----------------------------------------- GLow Background Section-----------------------------------------------------*/
-    .glow {
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }  
+  .glow {
    position: relative;
       height: 100vh;
       width: auto;
@@ -530,27 +535,26 @@
         position: relative;
         padding-top: 100px;
         margin: 22px;
-       
         overflow: hidden;
         min-height: 100vh;
       }
       .max-width {
-       max-width: 1300px;
+        max-width: 1200px;
         padding: 0 80px;
         margin: auto;
+        border-radius: 40px;
       }
     
      .projects-main {
         font-size: 2rem;
         text-align: center;
-        text-decoration-line: underline;
-        text-decoration-style: solid;
       }
     
       .project-image {
         width: auto;
         max-height: 200px;
         margin-bottom: 20px;
+        
       }
     
       .project {
@@ -567,7 +571,7 @@
         border-radius: 10px;
         text-align: center;
         transition: 0.3s ease;
-        background-color: ;
+       
       }
       .project-container:hover,
       .project-container:focus {
@@ -581,12 +585,7 @@
         font-weight: bold;
   
       }
-     .max-width {
-        max-width: 1200px;
-        padding: 0 80px;
-        margin: auto;
-        border-radius: 40px;
-      }
+       
     /*------------------------------------------Footer Section-----------------------------------------------------------------------------------------*/
       footer {
         position: relative;
