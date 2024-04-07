@@ -36,7 +36,7 @@
     opacity: 0;
     animation: slideRight 1s ease forwards;
    }
-   .navbar a {
+   /*.navbar a {
    display: inline-block;
     font-size: 18px;
     text-decoration: none;
@@ -101,22 +101,75 @@
       font-size: 1.2em;
     }
     /*nav bar--------------------------------------------------------------------------------------------------------------------------------*/
-    nav ul li{
-     list-style-type: none ;
-     display: inline-block;
-     padding: 10px 25px;
-    }
-     nav ul li a{
-      color: rgb(247, 244, 244);
-      text-decoration: none;
-      font-weight: bold;
-     }
-     nav ul li a:hover{
-      color: #96e6a1;
-     }
-      nav ul li a.active{
-        color: #96e6a1;
-      }
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: rgb(247, 244, 244);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #96e6a1;
+}
+.menu{
+  overflow: hidden;
+}
+.menu a.active {
+
+  color: #96e6a1;
+}
+
+/*
+nav ul li a.active {
+  color: #96e6a1;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.bar {
+ color: red;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.4s;
+}*/
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .menu.responsive {position: relative;}
+  .menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+    
+   
     /*Menu Icon-----------------------------------------------------------------------------------------------------------------------------*/
   
      /*BTN-----------------------------------------------------------------------------------------------------------------------------*/
