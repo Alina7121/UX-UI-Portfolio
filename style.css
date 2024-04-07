@@ -714,7 +714,9 @@ nav ul li a:hover {
       }
       .menu a.icon {
         float: right;
-        display: flex;
+        display: block;
+        font-size: 30px;
+        
       }
       .menu.responsive {
         position: relative;
@@ -723,10 +725,12 @@ nav ul li a:hover {
       .menu.responsive a.icon {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 0; 
+    
       }
+      
       .menu .responsive a {
-        display: flex;
+        display: block;
        
       }    
    
