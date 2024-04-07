@@ -696,7 +696,12 @@
     }
     /*------------------------------------------Media Queries-----------------------------------------------------------------------------------------*/
     @media only screen and (max-width: 600px) {
-  
+      .project-name{
+        font-size: 1em;
+      }
+      .project-description {
+        font-size: 0.8em;
+      }
       nav ul {
         display: none;
       }
@@ -787,7 +792,7 @@
       }
       .project-container {
         margin-bottom: 40px;
-        width:100px;
+        width:200px;
         height:auto;
       }
       /*.project-container.project-image {
@@ -796,7 +801,7 @@
        
       }*/
      .project-link .btn {
-        width: 10px;
+        width: 40px;
       
       }
       .welcome-message {
