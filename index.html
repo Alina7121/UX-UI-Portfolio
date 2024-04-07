@@ -136,38 +136,39 @@
  
   <script src="script.js"></script>
   <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-document.addEventListener('DOMContentLoaded', function () {
-  const menuIcon = document.querySelector('.fa-bars');
-  const menu = document.getElementById('myTopnav'); // Select the menu itself, not just the first <a> element
-
-  menuIcon.addEventListener('click', function () {
-    menu.classList.toggle('responsive'); // Toggle the 'responsive' class on the menu element
-  });
-
-  const menuItems = document.querySelectorAll('.menu a');
-  menuItems.forEach(item => {
-    item.addEventListener('click', function() {
-      // Remove active class from all menu items
-      menuItems.forEach(item => item.classList.remove('active'));
-      // Add active class to the clicked menu item
-      this.classList.add('active');
-      // If menu is responsive, hide it after clicking a menu item
-      if (menu.classList.contains('responsive')) {
-        menu.classList.remove('responsive');
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
       }
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.querySelector('.fa-bars');
+      const menu = document.getElementById('myTopnav'); // Select the menu itself, not just the first <a> element
+  
+      menuIcon.addEventListener('click', function () {
+        menu.classList.toggle('responsive'); // Toggle the 'responsive' class on the menu element
+      });
+  
+      const menuItems = document.querySelectorAll('.menu a');
+      menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+          // Remove active class from all menu items
+          menuItems.forEach(item => item.classList.remove('active'));
+          // Add active class to the clicked menu item
+          this.classList.add('active');
+          // If menu is responsive, hide it after clicking a menu item
+          if (menu.classList.contains('responsive')) {
+            menu.classList.remove('responsive');
+          }
+        });
+      });
     });
-  });
-});
-
-</script>
+  </script>
+  
 
 </body>
 </html>
