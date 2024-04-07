@@ -36,50 +36,7 @@
     opacity: 0;
     animation: slideRight 1s ease forwards;
    }
-   /*.navbar a {
-   display: inline-block;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    cursor: default;
-    opacity: 0;
-    animation: slideTop .5s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
-   }
-   .home-content h3{
-   font-size: 32px;
-   font-weight: 700;
-   opacity: 0;
-   animation: slideBotton 1s ease forwards;
-   animation-delay:.7s;
-  
-   }.home-content h3:nth-of-type(2){
-   margin-bottom:30px;
-   animation: slideTop 1s ease forwards;
-   animation-delay:.7s;
-   }
-   .home-content h1{
-   font-size: 56px;
-   margin: -4px 0;
-   opacity: 0;
-   animation: slideRight 1s ease forwards;
-   animation-delay: 1s ;
-   }
-   .home-content p{
-   font-size: 16px;
-   opacity: 0;
-   animation: slideLeft 1s ease forwards;
-   animation-delay: 1s ;
-    
-   }
-   .home-img img {
-   max-width:650px ;
-   margin-right: -20px;
-   opacity: 0;
-    animation:  zoomIn 1s ease forwards;
-    animation-delay: 2s ;
-   }
+   
   /*------------------------------------------------NAV----------------------------------------*/
   nav {
       position: fixed;
@@ -88,20 +45,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 8% 18px 1%;
+      /*padding: 18px 8% 18px 1%;*/
+      padding:20px;
       z-index: 2;
     }
-    /*Intro I am a Front end Web Developer*/
-    span {
-      background: linear-gradient(120deg, #f580d6 0%, #f93dba 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
-    /*nav bar--------------------------------------------------------------------------------------------------------------------------------*/
-
+  
+  
 nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -117,44 +66,23 @@ nav ul li a {
 nav ul li a:hover {
   color: #96e6a1;
 }
-.menu{
-  overflow: hidden;
-}
+
 .menu a.active {
 
   color: #96e6a1;
 }
-
-/*
-nav ul li a.active {
-  color: #96e6a1;
-}
-
-.menu-icon {
+.menu .icon {
   display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-right: 20px;
 }
-
-.bar {
- color: red;
-  height: 3px;
-  width: 25px;
-  margin: 3px 0;
-  transition: 0.4s;
-}*/
 
 @media screen and (max-width: 600px) {
-  .menu a:not(:first-child) {display: none;}
+  .menu a:not(.icon) {
+    display: none;
+  }
   .menu a.icon {
     float: right;
     display: block;
   }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
   .menu.responsive {position: relative;}
   .menu.responsive a.icon {
     position: absolute;
@@ -167,7 +95,6 @@ nav ul li a.active {
     text-align: left;
   }
 }
-
     
    
     /*Menu Icon-----------------------------------------------------------------------------------------------------------------------------*/
@@ -251,6 +178,15 @@ nav ul li a.active {
     }
     
     /*Content--------------------------------------------------------------------------------------------------------------------------------------*/
+      /*Intro I am a ...*/
+      span {
+        background: linear-gradient(120deg, #f580d6 0%, #f93dba 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
     .left{
       position: absolute;
       top: 70%;
@@ -755,12 +691,12 @@ nav ul li a.active {
       .project-description {
         font-size: 0.8em;
       }
-      nav ul {
+      /*nav ul {
         display: none;
       }
       nav {
         justify-content: space-between;
-      }
+      }*/
       .logo {
         margin-left: 10px;
       }

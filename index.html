@@ -145,11 +145,11 @@ function myFunction() {
   }
 }
 document.addEventListener('DOMContentLoaded', function () {
-  const menuIcon = document.querySelector('.icon');
-  const menu = document.querySelector('.menu');
+  const menuIcon = document.querySelector('.fa-bars');
+  const menu = document.getElementById('myTopnav'); // Select the menu itself, not just the first <a> element
 
   menuIcon.addEventListener('click', function () {
-    menu.classList.toggle('responsive');
+    menu.classList.toggle('responsive'); // Toggle the 'responsive' class on the menu element
   });
 
   const menuItems = document.querySelectorAll('.menu a');
