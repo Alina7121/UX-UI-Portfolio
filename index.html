@@ -26,12 +26,6 @@
               <i class="fa fa-bars"></i>
             </a></li>
         </ul>
-        <!-- Menu icon -->
-      <!-- <div class="menu-icon">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>-->
     </nav>
  
     <div class="content" id="content">
@@ -136,15 +130,23 @@
  
   <script src="script.js"></script>
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "menu") {
-        x.className += " responsive";
-      } else {
-        x.className = "menu";
-      }
-    }
-  
+    //function myFunction() {
+     // var x = document.getElementById("myTopnav");
+    //  if (x.className === "menu") {
+    //    x.className += " responsive";
+   //   } else {
+    //    x.className = "menu";
+   //   }
+  //  }
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.classList.contains("responsive")) {
+    x.classList.remove("responsive");
+  } else {
+    x.classList.add("responsive");
+  }
+}
+
     document.addEventListener('DOMContentLoaded', function () {
       const menuIcon = document.querySelector('.fa-bars');
       const menu = document.getElementById('myTopnav'); // Select the menu itself, not just the first <a> element

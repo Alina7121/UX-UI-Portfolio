@@ -718,10 +718,11 @@ nav ul li a:hover {
         font-size: 30px;
         
       }
+      
       .menu.responsive {
         position: relative;
+      
       }
-    
       .menu.responsive a.icon {
         position: absolute;
         right: 0;
@@ -733,6 +734,7 @@ nav ul li a:hover {
         display: block;
        
       }    
+      
    
       .logo {
         margin-left: 10px;
@@ -785,4 +787,7 @@ nav ul li a:hover {
       .social {
         justify-content: center;
       }
-    }
+    
+      }
+      
+    
