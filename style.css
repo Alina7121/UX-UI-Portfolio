@@ -353,9 +353,9 @@ display: none;
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
   .about img{
-    height: 330px;
-    width: 330px;
-   border-radius: 50%;
+    height: 420px;
+    width: 300px;
+   border-radius: 10%;
     object-fit: cover; 
     margin-right: 80px;
     margin-top: 5%;
