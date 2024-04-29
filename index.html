@@ -17,10 +17,12 @@
   <header id="home" class="glow">
     <h1 class="logo">Portfolio</h1>
     <nav class="topnav" id="myTopnav">
-            <a href="#home"class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+          
             <a href="#contact">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>     
+            <a href="#home"class="active">Home</a>
+           
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -43,14 +45,21 @@
   <div class="main">
     <img src="./me-img.png" alt="My Photo">
     <div class="about-text">
-      <h2>About me</h2>
-    <h5><span>UX | UI Designer </span></h5>
-      <p>I am happy to welcome you to my portfolio website! <span> <br>
-        I am a passionate UX Designer based in Toronto, Ontario.</span> 
-        <br> Proficient in crafting intuitive user experiences and captivating interfaces for web and mobile applications using Figma and Photoshop. Experienced in user research and usability testing. Committed to delivering visually appealing, user-centric solutions that drive business success, with strong HTML5, CSS, and JavaScript skills.</p>
-    </div>
+        <h2><span> About me</span> </h2>         
+     <p>I'm a dedicated UX/UI Designer based in the vibrant city of Toronto, Ontario. My passion lies in creating seamless user experiences and visually captivating interfaces for both web and mobile applications.
+      </p>
+       <h2><span> What I Do:</span></h2> 
+       <p> I specialize in crafting intuitive designs that not only look great but also prioritize user satisfaction. With expertise in tools like Figma and Photoshop, I bring ideas to life by blending creativity with technical proficiency.
+      </p>
+        <h2><span> Why I Do It:</span></h2>
+       <p>I'm driven by the desire to enhance the way people interact with digital platforms. From conducting in-depth user research to performing rigorous usability tests, I'm committed to ensuring that every design decision serves a purpose and delivers value.
+      </p> 
+        <h2><span> My Approach:</span></h2>
+       <p> I believe in the power of collaboration and continuous learning. By staying updated with the latest trends and technologies, I strive to deliver innovative solutions that not only meet but exceed expectations.</p>
+      </p>
+      </div>
    
-    <div class="skills">
+    <div class="skills-container">
       <div class="skill">
         <img src="./html-2.png"alt="HTML logo" class="skill-logo">
       </div>
@@ -75,20 +84,26 @@
  
         <div class="project-container">
           <img class="project-image" src="./ThaiRecipes.png" alt="Project 1">
-          <!--<div class="btn">click</div>-->
   <br><br>
-           <a class="project-link" href="https://alina7121.github.io/odin-recipes/" target="_blank"><h2 class="project-name">Thai Recipes</h2></a> 
-          <p class="project-description">A website showcasing a collection of my favourite Thai recipes</p>
+           <a class="project-link" href="https://alina7121.github.io/odin-recipes/" target="_blank">
+          <h2 class="project-name">Thai Recipes</h2>
+          </a> 
+          <p class="project-description">A website showcasing a collection of my favourite Thai recipes<span class="more">...</span>
+          <span class="more-text">including Pad Thai, Thai Curry Soup, Beef Salad, Steamed Mussels.</span></p>
+          <button class="show-more">Show More</button>
         </div>
         <div class="project-container">
           <img class="project-image" src="./albany-clinic.png" alt="Project 2">
-          <a class="project-link" href="https://www.figma.com/file/M4Pac8OAjZxx97xSxzRlWj/Redesign-of-Albany-Clinic?type=design&node-id=38%3A20&mode=design&t=406lKTREyzVeaD0K-1" target="_blank"><h2 class="project-name">Albany Clinic</h2></a> 
+          <a class="project-link" href="https://www.figma.com/file/M4Pac8OAjZxx97xSxzRlWj/Redesign-of-Albany-Clinic?type=design&node-id=38%3A20&mode=design&t=406lKTREyzVeaD0K-1" target="_blank">
+            <h2 class="project-name">Albany Clinic</h2></a> 
           <p class="project-description">A redesign of a medical clinic website to improve user focus and reduce clutter.</p>
+          
         </div>
         <div class="project-container">
             <img class="project-image" src="./Art+Ai.png" alt="Project 3">
  
-   <a class="project-link" href=" https://alina7121.github.io/Art-and-AI/" target="_blank"><h2 class="project-name">Art+AI</h2></a>
+   <a class="project-link" href=" https://alina7121.github.io/Art-and-AI/" target="_blank">
+    <h2 class="project-name">Art+AI</h2></a>
             <p class="project-description">An educational website exploring popular art styles and the impact of AI on artists' work.</p>
           </div>
       </div>
@@ -142,6 +157,28 @@
         x.className = "topnav";
       }
     };
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.querySelectorAll('.show-more');
+      
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          var description = this.previousElementSibling;
+          var moreText = description.querySelector('.more-text');
+          var dots = description.querySelector('.more');
+          
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            moreText.style.display = "none";
+            this.textContent = "Show More";
+          } else {
+            dots.style.display = "none";
+            moreText.style.display = "inline";
+            this.textContent = "Show Less";
+          }
+        });
+      });
+    });
     </script>
   <!--Active Menu Item-->
     <!--<script>
