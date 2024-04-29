@@ -332,21 +332,14 @@ display: none;
   }
   .about-text h2{
     color: rgb(247, 244, 244);
-   font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  /*h5 {
-    color:rgb(247, 244, 244);
-    letter-spacing: 2px;
-    font-size:1.75em;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-  }*/
+   font-size: 1.2em;
+    margin-bottom: 10px;
+   }
   .about-text p{
     color: rgb(247, 244, 244);
-    line-height: 25px;
-    font-size: 1.2em;
-    margin-bottom: 45px;
+    line-height: 20px;
+    font-size: 1em;
+    margin-bottom: 25px;
     word-spacing: 2px;
     padding:0 20px;
     max-width: 800px;
@@ -357,7 +350,7 @@ display: none;
     width: 300px;
    border-radius: 10%;
     object-fit: cover; 
-    margin-right: 80px;
+    margin-right: 40px;
     margin-top: 5%;
     box-shadow: 0 0 10px #02FEE4;
     transition: background-color 0.3s, transform 0.3s;
