@@ -323,12 +323,14 @@ display: none;
   }
   .main{    
     min-height: 100vh;
-   margin-top: 5%;
+    margin-top: 5%;
     max-width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+
   }
   .about-text h2{
     color: rgb(247, 244, 244);
@@ -346,8 +348,8 @@ display: none;
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
   .about img{
-    height: 420px;
-    width: 300px;
+    height: 500px;
+    width: 350px;
    border-radius: 10%;
     object-fit: cover; 
     margin-right: 40px;
@@ -444,10 +446,49 @@ display: none;
     overflow: hidden;
     min-height: 100vh;
   }
+    .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .project-container {
+    width: calc(25% - 40px); /* Adjusted width to occupy half the container width */
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 20px #1b9753d3, 0 0 10px #45da9e;
+    border-radius: 40px;
+    text-align: center;
+    transition: 0.3s ease;
+  
+  }
   .more-text {
     display: none;
   }
+  .show-more {
+    background-color: rgba(255, 255, 255, 0);
+    color: #f580d6;
+    border: 2px; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    margin-top: 10px;
   
+  }
+/* Define keyframes for glowing effect */
+@keyframes glowing {
+  0% { color: rgba(241, 226, 236, 0.8); }
+  50% { color: rgb(236, 104, 214); }
+  100% { color: rgba(237, 106, 197, 0.8); }
+}
+
+/* Apply glowing animation to the icons */
+.show-more i, .show-less i {
+  animation: glowing 1.5s infinite alternate; /* Apply glowing effect */
+  font-size: 20px;
+}
+
+
   .max-width {
     max-width: 1200px;
     padding: 0 80px; /* Adjust padding as needed */
@@ -456,6 +497,7 @@ display: none;
   }
   
   .projects-main {
+   margin-top: 20px;
     font-size: 2rem;
     text-align: center;
     text-decoration-line: underline;
@@ -470,22 +512,8 @@ display: none;
    padding-bottom: 20px;
   }
   
-  .project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .project-container {
-    width: calc(30% - 40px); /* Adjusted width to occupy half the container width */
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 2px 2px 20px #1b9753d3, 0 0 10px #45da9e;
-    border-radius: 40px;
-    text-align: center;
-    transition: 0.3s ease;
-     
-  }
+
+
 
   .project-container:hover,
   .project-container:focus {
@@ -502,7 +530,7 @@ display: none;
     color: rgb(14, 228, 178);
     font-weight: bold;
   }
-  
+  /*
   .project-container .btn {
     border-radius: 50%;
     padding: 5px 10px;
@@ -513,7 +541,7 @@ display: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 1s;
-  }
+  }*/
   
   /*------------------------------------------Footer Section-----------------------------------------------------------------------------------------*/
     footer {

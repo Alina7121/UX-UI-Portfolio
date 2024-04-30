@@ -45,6 +45,7 @@
   <div class="main">
     <img src="./me-img.png" alt="My Photo">
     <div class="about-text">
+      <br><br><br>
         <h2><span> &nbsp;&nbsp;&nbsp;&nbsp;About me</span> </h2>         
      <p>I'm a dedicated UX/UI Designer based in the vibrant city of Toronto, Ontario. My passion lies in creating seamless user experiences and visually captivating interfaces for both web and mobile applications.
       </p>
@@ -70,7 +71,7 @@
         <img src="./js.png"alt="JavaScript" class="skill-logo">
       </div>
       <div class="skill">
-        <img src="./angular.png"alt="Angular logo"class="skill-logo">
+        <img src="./icons/angular.png"alt="Angular logo"class="skill-logo">
       </div>
       <div class="skill">
         <img src="./illustrator.png"alt="illustrator logo"class="skill-logo">
@@ -78,44 +79,52 @@
   </div>
 </section>
 <section class="projects" id="projects">
-    <div class="max-width">
+   <!-- <div class="max-width">-->
       <h1 class="projects-main">PROJECTS</h1>
       <div class="project">
- 
+        <div class="project-container">
+          <img class="project-image" src="./DriveQuest.png" alt="Project 4">
+          <a class="project-link" href="https://drivequest-bdcd0e241c4b.herokuapp.com/" target="_blank">
+          <h2 class="project-name">DriveQuest</h2></a>
+          <p class="project-description">A game designed to help prepare individuals for the G1 <span class="more">...</span>
+            <span class="more-text">   driving test theory exam through interactive and engaging learning experiences.</span></p>
+            <button class="show-more"><i class="fas fa-angle-double-down"></i></button>
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="./Art+Ai.png" alt="Project 3">
+            <a class="project-link" href=" https://alina7121.github.io/Art-and-AI/" target="_blank">
+            <h2 class="project-name">Art+AI</h2></a>
+          <p class="project-description">An educational website exploring popular art styles <span class="more">...</span>
+            <span class="more-text"> and the impact of AI on artists' work.</span></p>
+          <button class="show-more"><i class="fas fa-angle-double-down"></i></button>
+        </div>
+   
         <div class="project-container">
           <img class="project-image" src="./ThaiRecipes.png" alt="Project 1">
   <br><br>
            <a class="project-link" href="https://alina7121.github.io/odin-recipes/" target="_blank">
           <h2 class="project-name">Thai Recipes</h2>
           </a> 
-          <p class="project-description">A website showcasing a collection of my favourite Thai recipes<span class="more">...</span>
-          <span class="more-text">including Pad Thai, Thai Curry Soup, Beef Salad, Steamed Mussels.</span></p>
-          <button class="show-more">Show More</button>
+          <p class="project-description">A website showcasing a collection of my favourite <span class="more">...</span>
+          <span class="more-text">Thai recipes including Pad Thai, Thai Curry Soup, Beef Salad, Steamed Mussels.</span></p>
+          <button class="show-more"><i class="fas fa-angle-double-down"></i></button>
         </div>
         <div class="project-container">
           <img class="project-image" src="./albany-clinic.png" alt="Project 2">
           <a class="project-link" href="https://www.figma.com/file/M4Pac8OAjZxx97xSxzRlWj/Redesign-of-Albany-Clinic?type=design&node-id=38%3A20&mode=design&t=406lKTREyzVeaD0K-1" target="_blank">
             <h2 class="project-name">Albany Clinic</h2></a> 
-          <p class="project-description">A redesign of a medical clinic website to improve user focus and reduce clutter.</p>
+          <p class="project-description">A redesign of a medical clinic website <span class="more">...</span>
+            <span class="more-text"> to improve user focus and reduce clutter.</span></p>
+            <button class="show-more"><i class="fas fa-angle-double-down"></i></button></span></p>
+        
           
         </div>
-        <div class="project-container">
-            <img class="project-image" src="./Art+Ai.png" alt="Project 3">
+    
  
-   <a class="project-link" href=" https://alina7121.github.io/Art-and-AI/" target="_blank">
-    <h2 class="project-name">Art+AI</h2></a>
-            <p class="project-description">An educational website exploring popular art styles and the impact of AI on artists' work.</p>
-          </div>
-      </div>
-      <div class="project-container">
-        <img class="project-image" src="./DriveQuest.png" alt="Project 4">
-        <a class="project-link" href="https://drivequest-bdcd0e241c4b.herokuapp.com/" target="_blank">
-        <h2 class="project-name">DriveQuest</h2></a>
-        <p class="project-description">A game designed to help prepare individuals for their G1 driving test theory exam through interactive and engaging learning experiences.</p>
-      </div>
+       </div>
   </div>
   </div>
-    </div>
+   
   </section>
  <footer id="contact"class="glow">
  <div class="welcome-message">
@@ -158,7 +167,8 @@
       }
     };
     </script>
-    <script>document.addEventListener('DOMContentLoaded', function() {
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
       var buttons = document.querySelectorAll('.show-more');
       
       buttons.forEach(function(button) {
@@ -170,16 +180,17 @@
           if (dots.style.display === "none") {
             dots.style.display = "inline";
             moreText.style.display = "none";
-            this.textContent = "Show More";
+            this.innerHTML = '<i class="fas fa-angle-double-down"></i>'; // Use Font Awesome icon for "Show More"
           } else {
             dots.style.display = "none";
             moreText.style.display = "inline";
-            this.textContent = "Show Less";
+            this.innerHTML = '<i class="fas fa-angle-double-up"></i>'; // Use Font Awesome icon for "Show Less"
           }
         });
       });
-    });
-    </script>
+    });</script>
+    
+    
   <!--Active Menu Item-->
     <!--<script>
    window.onload = function() {
