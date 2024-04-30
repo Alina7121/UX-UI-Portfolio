@@ -348,7 +348,7 @@ display: none;
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
   .about img{
-    height: 500px;
+    height: 450px;
     width: 350px;
    border-radius: 10%;
     object-fit: cover; 
@@ -370,26 +370,27 @@ display: none;
     }
   }
 /*------------------------------------------Skills Section----------------------------------------------------------------------------------*/
-.skills-container {
+.tools-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
- 
+  justify-content: center;
+ height: 100vh;
+  align-items: center;
+  gap: 20px;
 }
-.about .skills-container img.skill-logo {
-  width: 35px;
-  height: 50px;
-  margin: 10px;
-  object-fit: cover;
-  box-shadow:none !important;
+.skills-box {
+color:white;
 }
 
-.skill{
+.tools-container img.skill-logo {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  object-fit: cover;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s forwards;
 }
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -421,7 +422,7 @@ display: none;
   animation-delay: 4s;
 }
 
-.skills-container {
+.tools-container {
   animation: infiniteLoop 5s infinite;
 }
 @keyframes infiniteLoop {
