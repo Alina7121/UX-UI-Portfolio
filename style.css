@@ -227,12 +227,44 @@ nav{
    margin-left:40%;
  
   
+  }----------------------------------- GLow Background Section-----------------------------------------------------*/
+  .glow {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
   }
-/*----------------------------------------- GLow Background Section-----------------------------------------------------*/
-/*
-.glow {
+  
+  .glow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+   min-height: 100vh;
+    background: linear-gradient(to left, #505f306d, #0a66053b, #1f5a6159, #5e17573e);
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: -1;
+    animation: gradientAnimation 10s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+/*.glow {
  position: relative;
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     background: linear-gradient(to left, transparent 20%, rgba(131, 233, 233, 0.158) 70%, transparent 100%);
     margin-right: 10px;
@@ -261,11 +293,11 @@ nav{
     100% {
       transform: translateX(-50%); 
     }
-  }
+  }*/
   /*----------------------------------------- About Section-----------------------------------------------------*/
   #about {
     margin-top: 20px; 
-    height: 100vh;
+  min-height: 100vh;
   }
   /*.about:before {
     content: "";
@@ -290,7 +322,7 @@ nav{
     margin-top: 20px;
   }
   .about-container{    
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     margin-top: 5%;
     max-width: 90%;
     margin: 0 auto;
@@ -324,8 +356,8 @@ nav{
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
   .about img{
-    height: 450px;
-    width: 350px;
+    min-height: 450px;
+    max-width: 350px;
    border-radius: 10%;
     object-fit: cover; 
     margin-right: 40px;
@@ -347,7 +379,7 @@ nav{
   }
 /*------------------------------------------Tools Section----------------------------------------------------------------------------------*/
 #tools{
-  height: 100vh;
+  min-height: 100vh;
 }
 .tools-main {
   padding-top: 40px;
@@ -530,7 +562,7 @@ img.skill-logo {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }       
     footer p:nth-child(1) {
       font-size: 30px;
@@ -726,7 +758,7 @@ img.skill-logo {
     }
   }
   /*------------------------------------------Media Queries-----------------------------------------------------------------------------------------*/
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 650px) {
     .project-name{
       font-size: 1em;
     }
@@ -737,7 +769,7 @@ img.skill-logo {
       margin-left: 10px;
     }
     .left {
-      text-align: center;
+  align-items: center;
     }
     .right {
       display: none;
@@ -753,17 +785,17 @@ img.skill-logo {
     margin-bottom: 20px;
     
     }
-    .about {
+    /*.about {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .about-text {
-      text-align: left; /* Align text to the left */
+    
       margin: 0 auto; /* Center text horizontally */
-      padding: 0 20px; /* Add some padding to prevent text from sticking to edges */
-      max-width: 90%; 
-    }
+      /*padding: 0 20px; /* Add some padding to prevent text from sticking to edges */
+     
+   /* }*/
     .project {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
@@ -785,7 +817,7 @@ img.skill-logo {
       justify-content: center;
       gap:40px;
       padding-left: 0 ;
-margin-top: 80px;
+      margin: 0 auto;
     }
 
 
