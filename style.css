@@ -835,6 +835,7 @@ img.skill-logo {
     }
     .about img {
       margin-right: 0;
+      min-width: 250px;
     }
     .about-text {
       margin-top: 20px;
@@ -853,6 +854,7 @@ img.skill-logo {
     }
     .welcome-message {
       text-align: center;
+      word-wrap: normal;
     }
     .contact-info {
       text-align: center;
@@ -860,8 +862,13 @@ img.skill-logo {
     .social {
       justify-content: center;
     }
-  
+  .skills-box {
+    text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+  }
     @media screen and (max-width: 600px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive .icon {
