@@ -47,7 +47,7 @@
  
   </section>
 <section class="about" id="about" class="glow">
-  <div class="main">
+  <div class="about-container">
     <img src="./me-img.png" alt="My Photo">
     <div class="about-text">
       <br><br><br>
@@ -171,7 +171,7 @@
   </div>
    
   </section>
- <footer id="contact"class="glow">
+ <footer id="contact" class="glow">
  <div class="welcome-message">
         <p><span>Explore my work</span> and feel free to connect!</p>
     </div>
@@ -203,14 +203,14 @@
   
   <!--Hamburger Menu-->
  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    };
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className.indexOf("responsive") === -1) {
+    x.className += " responsive";
+  } else {
+    x.className = x.className.replace(" responsive", "");
+  }
+}
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
