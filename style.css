@@ -44,7 +44,7 @@ nav{
   font-size: 17px;
   justify-content: flex-end;
   font-family: "Roboto Flex", sans-serif;
-      font-weight: bold;
+  font-weight: 400;
 }
 
 .topnav a:hover {
@@ -244,9 +244,10 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-  
+  right:0;
+  bottom: 0;
     width: 100%;
-   min-height: 100vh;
+   height: 100vh;
     background: linear-gradient(to left, #505f306d, #0a66053b, #1f5a6159, #5e17573e);
     border-radius: 5px;
     pointer-events: none;
@@ -340,10 +341,10 @@ nav{
    }
   .about-text p{
     color: rgb(247, 244, 244);
-   /* line-height: 20px;
-    font-size: 1em;
+   line-height: 20px;
+    font-size: 1.2em;
     margin-bottom: 25px;
-    word-spacing: 2px;*/
+    word-spacing: 2px;
     font-family: "Roboto Flex", sans-serif;
     font-weight: lighter;
     padding:0 20px;
@@ -410,7 +411,23 @@ li::marker {
   font-weight: lighter;
   font-size: 1.2em;
 }
+.skills-container {
+  display: flex;
+}
 
+.skills-box {
+  flex: 1; /* Equal width for both boxes */
+  margin: 0 20px; /* Add some space between the boxes */
+}
+
+.skills-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-box ul li {
+  margin-bottom: 10px;
+}
 img.skill-logo {
   width: 50px;
   height: auto;
