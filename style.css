@@ -403,9 +403,6 @@ li::marker {
 .skills-box {
  color:white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
   word-spacing: 2px;
   font-family: "Roboto Flex", sans-serif;
   font-weight: lighter;
