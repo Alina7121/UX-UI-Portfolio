@@ -417,10 +417,7 @@ li::marker {
   margin: 0 20px; /* Add some space between the boxes */
 }
 
-.skills-box ul {
-  list-style-type: none;
-  padding: 0;
-}
+
 
 .skills-box ul li {
   margin-bottom: 10px;
