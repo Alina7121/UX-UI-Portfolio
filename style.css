@@ -342,7 +342,7 @@ nav{
   .about-text p{
     color: rgb(247, 244, 244);
    line-height: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 25px;
     word-spacing: 2px;
     font-family: "Roboto Flex", sans-serif;
@@ -841,7 +841,7 @@ img.skill-logo {
       flex-direction: column;
     }
     .about img {
-      margin-right: 0;
+ 
       min-width: 250px;
     }
     .about-text {
@@ -861,7 +861,6 @@ img.skill-logo {
     }
     .welcome-message {
       text-align: center;
-      word-wrap: normal;
     }
     .contact-info {
       text-align: center;
