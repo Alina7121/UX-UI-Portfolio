@@ -44,7 +44,7 @@ nav{
   font-size: 17px;
   justify-content: flex-end;
   font-family: "Roboto Flex", sans-serif;
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 .topnav a:hover {
