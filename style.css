@@ -230,7 +230,7 @@ nav{
   
   }
   /*----------------------------------- GLow Background Section-----------------------------------------------------*/
-  .glow {
+  /*.glow {
     position: relative;
     min-height: 100vh;
 
