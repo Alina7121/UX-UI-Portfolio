@@ -398,23 +398,25 @@ li::marker {
   gap: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
+
 }
 
 .skills-box {
  color:white;
   display: flex;
+  flex-direction: column;
   word-spacing: 2px;
   font-family: "Roboto Flex", sans-serif;
   font-weight: lighter;
   font-size: 1.2em;
+  margin: 0 20px;
+  justify-content: center;
+  gap:20px;
 }
 .skills-container {
   display: flex;
-}
+  flex-wrap: wrap;
 
-.skills-box {
-  flex: 1; /* Equal width for both boxes */
-  margin: 0 20px; /* Add some space between the boxes */
 }
 
 
