@@ -190,10 +190,11 @@ nav{
    transform: translateY(-50%);
   }
   h1 {
-    background: -webkit-linear-gradient(120deg, #f7f2f2 0%, #f384d1 100%);
+   /* background: -webkit-linear-gradient(120deg, #f7f2f2 0%, #f384d1 100%);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    color:#f7f2f2;
     font-size: 2.5em;
     margin-bottom: 40px;/*was 75 and 50*/
     font-family: "Satisfy", cursive;
@@ -298,6 +299,7 @@ nav{
   /*----------------------------------------- About Section-----------------------------------------------------*/
   #about {
     margin-top: 20px; 
+    min-height: 100vh;
 
   }
   /*.about:before {
@@ -323,7 +325,7 @@ nav{
     margin-top: 20px;
   }
   .about-container{    
-    min-height: 100vh;
+    
     margin-top: 5%;
     max-width: 90%;
     margin: 0 auto;
@@ -359,7 +361,7 @@ nav{
     object-fit: cover; 
     margin-right: 40px;
     margin-top: 5%;
-    box-shadow: 0 0 10px #02FEE4;
+    box-shadow: 0 0 10px #ffaefb;
     transition: background-color 0.3s, transform 0.3s;
     animation: glow 2s infinite alternate;
   }
@@ -368,10 +370,10 @@ nav{
   }
   @keyframes glow {
     0% {
-      box-shadow: 0 0 40px #96e6a1;
+      box-shadow: 0 0 40px #eef1ee;
     }
     100% {
-      box-shadow: 0 0 40px #ade488; /* Change shadow intensity as needed */
+      box-shadow: 0 0 40px #f9fbf7; /* Change shadow intensity as needed */
     }
   }
 /*------------------------------------------Tools Section----------------------------------------------------------------------------------*/
@@ -500,7 +502,7 @@ img.skill-logo {
     width: calc(25% - 40px); /* Adjusted width to occupy half the container width */
     margin: 20px;
     padding: 20px;
-    box-shadow: 2px 2px 20px #1b9753d3, 0 0 10px #45da9e;
+    box-shadow: 2px 2px 20px #f093cbd3, 0 0 10px #eef3f1;
     border-radius: 40px;
     text-align: center;
     transition: 0.3s ease;
