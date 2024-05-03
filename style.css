@@ -11,8 +11,8 @@
   overflow-x: hidden;
  }   
 
- .logo{
-  font-size: 2em;
+ h1 .logo{
+  font-size: 2.5em;
   background: linear-gradient(120deg, #e08eb7 0%, #e60da5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
