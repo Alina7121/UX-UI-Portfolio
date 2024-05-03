@@ -8,12 +8,11 @@
  body{
  background-color: rgb(13, 14, 13);
   font-family: "Roboto Flex", sans-serif;
-  font-weight: lighter;
   overflow-x: hidden;
  }   
 
  .logo{
-  font-size: 40px;
+  font-size: 2em;
   background: linear-gradient(120deg, #e08eb7 0%, #e60da5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,7 +40,7 @@ nav{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.2em;
   justify-content: flex-end;
   font-family: "Roboto Flex", sans-serif;
   font-weight: lighter;
@@ -93,11 +92,11 @@ nav{
    .btn {
     display: inline-block;
     padding: 12px 28px;
-    background-image: linear-gradient(120deg, #0a4625 0%, #f986d6 100%);
+    background: linear-gradient(120deg, #e08eb7 0%, #e60da5 100%);
     border-radius: 40px;
-    box-shadow: 0 0 10px #02FEE4;
+    box-shadow: 0 0 10px #e08eb7;
     font-size:1.2em;
-    color: #eaefde;
+    color: black;
     letter-spacing: 1px;
     text-decoration: none;
   
@@ -111,7 +110,7 @@ nav{
   
   .btn:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(120deg, #0a4625 0%, #f1f48f 100%);
+    box-shadow: inset 0 0 10px #e60da5;
   }
   
   @keyframes slideRight {
@@ -179,7 +178,7 @@ nav{
       background-clip: text;
       -webkit-text-fill-color: transparent;
      
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-family: "Satisfy", cursive;
       font-weight: 400;
       font-style: normal;
@@ -195,14 +194,14 @@ nav{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 55px;
+    font-size: 1.75em;
     margin-bottom: 40px;/*was 75 and 50*/
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
   }
   h3{
-    font-size: 20px;
+    font-size: 1.5em;
     margin-bottom: 50px;
     color:#96e6a1;
     font-family: "Roboto Flex", sans-serif;
@@ -216,7 +215,7 @@ nav{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: "Roboto Flex", sans-serif;
     font-weight: bold;
 
@@ -348,13 +347,9 @@ nav{
     font-family: "Roboto Flex", sans-serif;
     font-weight: lighter;
     padding:0 20px;
-    max-width: 800px;
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      unicode-bidi: isolate;
+    max-width: 450px;
+    display: block;
+   
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
   .about img{
@@ -388,7 +383,7 @@ li::marker {
 }
 .tools-main {
   padding-top: 40px;
-   font-size: 2rem;
+   font-size: 2em;
    text-align: center;
 }
 .tools-container {
@@ -536,7 +531,7 @@ img.skill-logo {
   font-size: 20px;
 }
   .max-width {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 0 80px; /* Adjust padding as needed */
     margin: auto;
     border-radius: 40px;
@@ -569,7 +564,8 @@ img.skill-logo {
     color: #ffaefb;
   }
   .project-description {
-    color: rgb(14, 228, 178);
+  color:white;
+  font-size: 1.2em;
     
   }
 
@@ -587,7 +583,7 @@ img.skill-logo {
       min-height: 100vh;
     }       
     footer p:nth-child(1) {
-      font-size: 30px;
+      font-size: 1em;
     }
     footer p:nth-child(2) {
       font-size: 17px;
@@ -595,7 +591,7 @@ img.skill-logo {
       line-height: 26px;
     }
     .contact-info {
-      font-size: 20px;
+    
       margin-top: 20px;
       padding-bottom: 20px;;
     }
@@ -616,7 +612,7 @@ img.skill-logo {
       justify-content: center;
       background-image: linear-gradient(120deg,  #ffaefb 0%, #ef3db9 100%);
       border-radius: 50%;
-      font-size: 20px; 
+  
       color: black;
       text-decoration: none;
       transition: background-color 0.3s, transform 0.3s;
@@ -631,7 +627,7 @@ img.skill-logo {
     
   /*Smiley------------------------------------------------------------------------------------------------------------------------ */
   :root {
-    --main-part-color: #96e6a1;
+    --main-part-color: #eccee4;
   }
 
  .box{
