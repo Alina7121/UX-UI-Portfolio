@@ -569,7 +569,7 @@ img.skill-logo {
   .project-description {
   color:white;
   font-size: 1.2em;
-    
+    font-weight: lighter;
   }
 
   
@@ -625,7 +625,7 @@ img.skill-logo {
     .social a:hover {
       background-color: #0a0a00;
       color:#d405ae;
-      box-shadow: #d405ae;
+      box-shadow:  0 0 20px #ffaefb ;;
       transform: scale(1.1);
     }
    
