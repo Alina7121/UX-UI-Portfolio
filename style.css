@@ -370,10 +370,10 @@ nav{
   }
   @keyframes glow {
     0% {
-      box-shadow: 0 0 40px #eef1ee;
+      box-shadow: 0 0 40px  rgb(250, 59, 186);
     }
     100% {
-      box-shadow: 0 0 40px #f9fbf7; /* Change shadow intensity as needed */
+      box-shadow: 0 0 40px  rgb(250, 59, 186); /* Change shadow intensity as needed */
     }
   }
 /*------------------------------------------Tools Section----------------------------------------------------------------------------------*/
@@ -588,10 +588,10 @@ img.skill-logo {
       min-height: 100vh;
     }       
     footer p:nth-child(1) {
-      font-size: 1em;
+      font-size: 1.2em;
     }
     footer p:nth-child(2) {
-      font-size: 17px;
+      font-size: 1.2em;
       text-align: center;
       line-height: 26px;
     }
