@@ -94,7 +94,7 @@ nav{
     padding: 12px 28px;
     background: linear-gradient(120deg, #e08eb7 0%, #e60da5 100%);
     border-radius: 40px;
-    box-shadow: 0 0 10px #e7dae0;
+    box-shadow: 0 0 10px rgb(250, 59, 186);
     font-size:1.2em;
     color: black;
     letter-spacing: 1px;
