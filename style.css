@@ -506,7 +506,7 @@ img.skill-logo {
     transition: 0.3s ease;
   
   }
-  .more-text {
+  /*.more-text {
     display: none;
   }
   .show-more {
@@ -517,26 +517,30 @@ img.skill-logo {
     cursor: pointer; 
     margin-top: 10px;
   
-  }
+  }*/
 /* Define keyframes for glowing effect */
+
+/*
 @keyframes glowing {
   0% { color: rgba(241, 226, 236, 0.8); }
   50% { color: rgb(236, 104, 214); }
   100% { color: rgba(237, 106, 197, 0.8); }
 }
-
+*/
 /* Apply glowing animation to the icons */
+/*
 .show-more i, .show-less i {
   animation: glowing 1.5s infinite alternate; /* Apply glowing effect */
-  font-size: 20px;
-}
-  .max-width {
+ /* font-size: 20px;
+}*/
+  
+/*.max-width {
     max-width: 100%;
     padding: 0 80px; /* Adjust padding as needed */
-    margin: auto;
+   /* margin: auto;
     border-radius: 40px;
   }
-  
+  */
   .projects-main {
    margin-top: 20px;
     font-size: 2rem;
