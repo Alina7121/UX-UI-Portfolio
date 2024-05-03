@@ -47,7 +47,7 @@ nav{
 }
 
 .topnav a:hover {
-  color: #96e6a1;
+  color: #e60da5;
 }
 
 .topnav a.active {
@@ -110,7 +110,7 @@ nav{
   
   .btn:hover {
     transform: scale(1.1);
-    box-shadow: inset 0 0 10px #e60da5;
+    box-shadow: inset 0 0 10px #ebc7e0;
   }
   
   @keyframes slideRight {
@@ -194,7 +194,7 @@ nav{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.75em;
+    font-size: 2.5em;
     margin-bottom: 40px;/*was 75 and 50*/
     font-family: "Satisfy", cursive;
     font-weight: 400;
