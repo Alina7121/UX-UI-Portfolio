@@ -353,33 +353,36 @@ nav{
     font-family: "Roboto Flex", sans-serif;
     font-weight: lighter;
     padding:0 20px;
-    max-width: 450px;
+    max-width: 500px;
     display: block;
    
   }
   /*Image------------------------------------------------------------------------------------------------------------------------------*/
-  .about img{
-    min-height: 450px;
-    max-width: 350px;
-   border-radius: 10%;
-    object-fit: cover; 
+  .about img {
+    height: 550px;
+    max-width: 450px;
+    border-radius: 10%;
+    object-fit: cover;
     margin-right: 40px;
     margin-top: 5%;
-    box-shadow: 0 0 10px #ffaefb;
+    box-shadow: 0 0 15px #ffaefb;
     transition: background-color 0.3s, transform 0.3s;
     animation: glow 2s infinite alternate;
   }
+  
   .about img:hover {
     transform: scale(1.1);
   }
+  
   @keyframes glow {
     0% {
-      box-shadow: 0 0 40px  rgb(250, 59, 186);
+      box-shadow: 0 0 15px #ffaefb;
     }
     100% {
-      box-shadow: 0 0 40px  rgb(250, 59, 186); /* Change shadow intensity as needed */
+      box-shadow: 0 0 40px  rgb(250, 59, 186);
     }
   }
+  
 /*------------------------------------------Tools Section----------------------------------------------------------------------------------*/
 #tools{
   min-height: 100vh;
