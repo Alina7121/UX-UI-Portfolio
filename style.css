@@ -403,7 +403,7 @@ li::marker {
 }
 
 .skills-box {
-
+align-items: center;
   display: flex;
   flex-direction: column;
  color:white;
