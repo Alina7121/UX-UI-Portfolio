@@ -589,14 +589,6 @@ img.skill-logo {
       justify-content: center;
       min-height: 100vh;
     }       
-    footer p:nth-child(1) {
-     /* font-size: 1.2em;*/
-    }
-    footer p:nth-child(2) {
-     /* font-size: 1.2em;*/
-      text-align: center;
-      line-height: 26px;
-    }
     .contact-info {
       text-align: center;
       margin-top: 20px;
@@ -822,12 +814,12 @@ img.skill-logo {
     .welcome-message {
       text-align: center;
     }
-    .contact-info {
+    /*.contact-info {
       text-align: center;
     }
     .social {
       justify-content: center;
-    }
+    }*/
     .tools {
       display: flex;
       flex-wrap: wrap;
@@ -838,7 +830,7 @@ img.skill-logo {
     }
     .left {
       text-align: center;
-      top: 50%;
+      /*top: 50%;*/
     }
     .right {
       display: none;
@@ -863,16 +855,11 @@ img.skill-logo {
       align-items: center;
     }
   }
+
+
+
+
   @media only screen and (max-width: 350px) {
-    .project-name{
-      font-size: 1em;
-    }
-    .project-description {
-      font-size: 1em;
-    }
-    .logo {
-      margin-left: 10px;
-    }
     .left {
   align-items: center;
     }
@@ -910,7 +897,7 @@ img.skill-logo {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap:40px;
+      gap:20px;
       padding-left: 0 ;
       margin: 0 auto;
     }
