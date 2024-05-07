@@ -476,7 +476,7 @@ img.skill-logo {
   }
   
   .project-container {
-    width: calc(25% - 40px); /* Adjusted width to occupy half the container width */
+    width: calc(15% - 30px); /* Adjusted width to occupy half the container width */
     margin: 20px;
     padding: 20px;
     box-shadow: 2px 2px 20px #f093cbd3, 0 0 10px #eef3f1;
