@@ -209,10 +209,7 @@ nav{
     }
   
   .content p{
-    background: -webkit-linear-gradient(120deg, #f9f3f3 0%, #f384d1 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+   color:white;
     letter-spacing: 2px;
     font-size: 1.2em;
     font-family: "Roboto Flex", sans-serif;
