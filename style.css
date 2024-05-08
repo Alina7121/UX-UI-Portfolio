@@ -766,8 +766,10 @@ img.skill-logo {
     justify-content: center;
     }
     .peony {
-      max-width: 200px;
+      max-width: 300px;
       height: auto;
+      margin-left: 20%;
+      
     }
     .about-container {
       text-align: center;
