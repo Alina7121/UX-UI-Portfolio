@@ -780,12 +780,8 @@ img.skill-logo {
     margin-bottom: 20px;
       min-width: 200px;
     }*/
-    
     .project {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-    .project {
-      grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     .project-container {
       margin-bottom: 40px;
